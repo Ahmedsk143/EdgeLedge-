@@ -1,0 +1,239 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    max-width: 1100px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 0rem;
+}
+ul{
+    list-style: none;
+}
+.text-style{
+    color:#4646ff;
+}
+a{
+    text-decoration: none;
+    color:#fff;
+}
+p{
+    margin: 0.75rem 0;
+}
+h1,h2,h3{
+    cursor: default;
+}
+
+/* The navigation bar styling */
+#main-nav{
+    background: rgba(51, 51, 51);
+    position: sticky;
+    top:0;
+    z-index: 1;
+    opacity: 0.9;
+}
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    color:#fff;
+}
+#navbar h1{
+    padding: 1rem;
+}
+#navbar ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+#navbar ul li a{
+    padding: 0.75rem;
+    margin: 0 0.75rem;
+    display: block;
+    transition: all 0.5s ease-in-out;
+}
+#navbar ul li a:hover{
+    background: #0c78ff;
+    border-radius: 50%;
+    padding:0.75rem;
+}
+/* The main header with img */
+#main-header{
+    background: url('../img/showcase.jpg') no-repeat center center/cover;
+    height: 110vh;
+    color:#fff;
+}
+#header-content{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    /* overlay to darken the background of the main header */
+    background: rgba(0,0,0,0.3);
+}
+#header-content h1{
+    font-size: 3rem;
+    color:#fff;
+}
+#header-content p{
+    margin-bottom: 4rem;
+    margin-top: 2rem;
+}
+#header-content a{
+    background:#0c78ff;
+    color:#fff;
+    padding: 0.7rem 2rem;
+    border-radius: 0.5rem;
+    transition: all 0.5s ease-in-out;
+
+}
+#header-content a:hover{
+    background:#91c2ff;
+    color:#000;
+}
+
+/* Section What we do */
+#what{
+    background: #f4f4f4;
+}
+#what .items{
+    display: flex;
+    justify-content: center;
+    padding:4rem 0;
+    line-height: 1.8rem;
+}
+#what .item{
+    text-align:center;
+    line-height: 1.5rem;
+}
+#what .item i{
+    background:#0c78ff;
+    border-radius: 50%;
+    padding:1rem;
+    margin-bottom: 1.5rem;
+}
+#what h2{
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+/* sction who we are */
+#who{
+    background: #333;
+    color:#fff;
+}
+#who .who-content{
+    display: flex;
+}
+#who #left{
+    background: url('../img/people.jpg') no-repeat center center/cover;
+    flex:1;
+}
+#who #right{
+    flex: 1;
+    padding:1.8rem;
+    line-height: 1.8rem;
+}
+#who #right h2{
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+#who #right h3{
+    font-size: 1.5rem;
+    margin: 1rem 0 0.75rem 0;
+}
+#who #right ul li{
+    padding: 0.3rm;
+    margin:0.5rem 0;
+    border-bottom: 1px dotted #444444;
+}
+
+/* Out clients  */
+#clients{
+    background: #f4f4f4;
+    text-align: center;
+    padding: 2rem 8rem;
+}
+#clients h2{
+    margin-bottom: 2rem;
+    font-size: 2rem;
+
+}
+#clients #clients-content{
+    display: flex;
+    justify-content: space-between;
+}
+#clients-content img{
+    display: block;
+    width:10%;
+}
+
+/* The contact styling */
+#contact{
+    background:url(../img/contact.jpg) no-repeat center center/cover;
+    padding:1rem;
+    color:#fff;
+}
+
+.contact-content h2{
+    font-size: 2rem;
+    margin:1rem 0;
+    
+}
+.contact-content p{
+    font-size:1.2rem;
+}
+.contact-content .form-group{
+    margin: 2rem 0;
+}
+.contact-content label{
+    display: block;
+    margin-bottom: 0.75rem;
+    
+}
+.contact-content textarea{
+    width:100%;
+    height: 13rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    font-size: 1rem;
+}
+.contact-content input{
+    padding:0.75rem;
+    width:100%;
+    border-radius: 0.5rem;
+    font-size:1rem;
+    border: none;
+}
+.contact-content input:focus,
+.contact-content textarea:focus{
+    outline: none;
+}
+.contact-content .submit{
+    display: block;
+    width:100%;
+    margin: auto;
+    cursor: pointer;
+    border:none;
+    background:#4646ff;
+    color:#fff;
+    font-size:1.2rem;
+    border-radius: 1rem;
+}
+
+footer{
+    color:#fff;
+    background: #333;
+    padding: 1.5rem;
+    text-align: center;
+}
